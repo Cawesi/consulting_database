@@ -5,7 +5,7 @@ app = Flask( __name__ )
 
 @app.route( '/' )
 def flikker():
-    json_file = './usuarios.json'
+    json_file = 'usuarios.json'
 
     with open( json_file, encoding='utf-8' ) as file:
         json_file = json.load( file )
